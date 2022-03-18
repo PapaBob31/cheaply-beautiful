@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: segoe UI, sans-serif;
+	font-family: Segoe UI, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -11,6 +11,7 @@ body {
 input {
 	outline: none;
 }
+
 
 button {
 	display: inline;
@@ -22,7 +23,11 @@ button {
 #top-bar {
 	background: rgb(255, 229, 158);
 	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 	top: 0;
+	padding: 0 5%;
 	z-index: 2;
 }
 
@@ -34,55 +39,71 @@ button {
 #name-display {
 	margin: 0;
 	display: inline;
+	font-style: italic;
 }
 
 #menu-search {
-	border-radius: 10px;
+	border-radius: 5px;
 	height: 25px;
 	width: 100%;
 	border: 1px solid grey;
 	padding: 5px;
+	background: rgb(255, 255, 210);
 }
 
 #search-container {
+	padding-top: 5px;
 	width: 40%;
-	padding-right: 15px;
-	padding-top: 15px;
 }
 
 #menu-options {
+	width: 40%;
 	display: flex;
+	justify-content: space-between;
+}
+
+
+#img-and-text {
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+	display: flex;
+	align-items: flex-start;
 	justify-content: space-evenly;
+	overflow: hidden;
+	padding: 10px 5% 20px 5%;
+	background: rgb(246, 246, 246);
 }
 
-.center {
-	position: relative;
-	margin-right: 20%;
-	margin-left: 20%;
+.text {
+	padding-left: 3px;
+	text-align: center;
+	font-size: 15px;
+	background: rgb(250, 250, 250);
 }
 
-.center .text {
-	position: absolute;
+.img-parents {
+	width: 20%;
+	overflow: hidden;
+	box-shadow: 7px 7px 9px rgb(230, 230, 230);
+}
+
+.img-parents img {
+	background: white;
+	display: block;
 	width: 100%;
-	height: 20%;
-	top: 80%;
-	background: rgba(224, 223, 220, 0.3);
+	height: 240px;
+}
+
+#slideshow-container {
+	position: relative;
+	background: rgb(255, 255, 210);
+	padding-left: 20%;
+	padding-right: 20%;
 	padding-bottom: 20px;
 }
 
-.center h2 {
+#slideshow-container h2 {
 	margin: 0;
-}
-
-.center img {
-	width: 100%;
-	max-height: 500px;
-}
-
-#products-slideshow {
-	position: relative;
-	overflow: scroll;
-	height: 300px;
 }
 
 #slideshow-container a {
@@ -114,15 +135,14 @@ button {
 }
 
 #slideshow {
+	width: 100%;
 	display: flex;
 	overflow: hidden;
 }
 
 #slideshow img {
-	display: inline;
-	min-width: 33.3%;
-	max-height: 300px;
-	min-height: 300px;
+	min-width: 33.33%;
+	height: 250px;
 	transition: 0.5s;
 }
 
@@ -135,21 +155,69 @@ button {
 	background: lightgrey;
 	color: white;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 20px;
 	position: absolute;
 	top: 50%;
 	transition: 0.5s;
 	z-index: 10;
+	height: 30px;
+	width: 30px;
+	padding: 3px;
+	border-radius: 50%;
 }
 
 #nav-right {
-	right: 10px;
+	right: 21%;
 }
 
 #nav-left {
-	left: 10px;
+	left: 21%;
 }
 
 #nav-left:hover, #nav-right:hover {
 	background: rgb(255, 229, 158);
+}
+
+#aliens {
+	display: flex;
+	padding: 0 10%;
+	margin: 20px 0;
+	justify-content: center;
+}
+
+#aliens h2 {
+	margin: 0;
+}
+
+#aliens img {
+	width: 300px;
+	height: 250px;
+	padding-left: 20px;
+}
+
+#aliens-txt {
+	width: 40%;
+	text-align: justify;
+	padding-right: 20px;
+}
+
+#ending {
+	width: 70%;
+	margin: auto;
+}
+
+#bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+
+#bottom p {
+	margin: 0;
+	font-weight: bold;
+}
+
+#legal {
+	display: flex;
+	flex-direction: column;
 }

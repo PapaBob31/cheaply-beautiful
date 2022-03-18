@@ -19,7 +19,7 @@ function moveLeft() { //moves the slideshow left
 		for (let i=0; i<images.length; i++) {
 			images[i].style.transform = `translateX(${vel}%)`
 		}
-	}
+	}   
 }
 
 function moveRight() { //moves the slideshow right

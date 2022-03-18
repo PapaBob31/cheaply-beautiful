@@ -3,49 +3,64 @@
 <head>
 	<title>marketplace</title>
 	<link rel="stylesheet" href="homepage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
 	<div id="top-bar">
 		<div id="search-bar-and-name">
-			<h1 id="name-display">CheaplyBeautiful.com</h1>
-			<div id="search-container"><input type="text" name="search-box" placeholder="search items" id="menu-search"></div>
+			<h2 id="name-display">CheaplyBeautiful</h2>
 		</div>
+		<div id="search-container"><input type="text" name="search-box" placeholder="search items" id="menu-search"></div>
 		<div id="menu-options">
 			<span>Home</span>
+			<span>About</span>
 			<span>saved Items</span>
-			<span>User-icon</span>
-			<span>cart</span>
+			<span class="material-icons-outlined">account_circle</span>
+			<span class="material-icons-outlined">shopping_cart</span>
+			<span class="material-icons-outlined">person_add</span>
 			<span>Products</span>
 		</div>
 	</div>
-	<div class="center">
-		<img src="..\beautiful-images\sony camera.jpg"/>
-		<div class="text">
-			<h2>Welcome to cheaply beautiful.com where you can get awesome products (and we mean awesome) at mind blowing prices</h2>
-			<h2>Click here to get started <button>Explore Products</button></h2>
+	<div id="img-and-text">
+		<div class="img-parents">
+			<img src="discount.svg"/>
+			<div class="text">
+				Welcome to cheaply beautiful.com where you can get awesome products at mind blowing prices
+			</div>
+		</div>
+		<div class="img-parents">
+			<img src="delivery.svg"/>
+			<div class="text">
+				On-Time deliveries, efficient customer care, Quality goods and so many more makes us the best in the business
+			</div>		
+		</div>
+		<div class="img-parents">
+			<img src="around the world.svg"/>
+			<div class="text">
+				With our branches spread all over the world, online shopping has never been easier
+				<span>So what are you waiting for?</span>
+			</div>
+		</div>
+		<div class="img-parents">
+			<img src="customer care.svg"/>
+			<div class="text">
+				Capable and hardworking workers who are always ready to listen and attend to your complaints.
+			</div>
 		</div>
 	</div>
-	<div class="center">
-		<img src="..\beautiful-images\books.jpg"/>
-		<h2 class="text">On-Time deliveries, efficient customer care, Quality goods and so many more makes us the best in the business</h2>		
-	</div>
-	<div class="center">
-		<img src="..\beautiful-images\shoe 1.jpg"/>
-		<div class="text">
-			<h2>With our branches spread all over the world, online shopping has never been easier</h2>
-			<h2>So what are you waiting for?, start ordering now</h2>
-		</div>
-	</div>
-	<div class="center" id="slideshow-container">
-		<div>Some of our Products</div>
+	<div id="slideshow-container">
+		<h2>Some of our Products</h2>
 		<div id="items-quick-links">
 			<a href="#">Laptops<span class="underline" id="first-underline"></span></a>
 			<a href="#">Books<span class="underline"></span></a>
 			<a href="#">Shoes<span class="underline"></span></a>
 			<a href="#">Clothing<span class="underline"></span></a>
-			<button id="nav-left"><</button>
-			<button id="nav-right">></button>
 		</div>
+		<button id="nav-left"><</button>
+		<button id="nav-right">></button>
 		<div id="slideshow">
 			<img src="..\beautiful-images\laptop 1.jpg"/>
 			<img src="..\beautiful-images\laptop 2.jpg"/>
@@ -61,7 +76,33 @@
 			<img src="..\beautiful-images\shoe 3.jpg"/>
 		</div>
 	</div>
-	<h2 class="center">Why "smile more" when you can shop like everyday is Black friday<button>Market Place</button>
+	<div id="aliens">
+		<div id="aliens-txt">
+			<h2>Not from Earth?</h2>
+			<div>
+				We got you covered. Due to our Patnership with SpaceX and Universal Bank, ExtraTerrestrial travels 
+				has become child's play for our delivery Team. Meaning you can always get high quality poducts as well as make 
+				convenient payments no matter where you are from without breaking the bank!
+			</div>
+		</div>
+		<img src="..\beautiful-images\astronauts in space van.webp"/>
+	</div>
+	<h2 id="ending">Why "smile more" when you can shop like everyday is Black friday<button>Market Place</button></h2>
+	<hr>
+	<div id = "bottom">
+		<span>Copyright 2022 CheaplyBeautiful.com</span>
+		<div id = "legal">
+			<p>Legal</p>
+			<span>Terms and Condition</span>
+			<span>Privacy Policy</span>
+		</div>
+		<div>
+			<p>Connect with us</p>
+			<span>FaceBook</span>
+			<span>Twitter</span>
+			<span>Instagram</span>
+		</div>
+	</div>
 	<script type="text/javascript" src="homepage.js"></script>
 </body>
 </html>
