@@ -2,50 +2,57 @@
 <html>
 <head>
 	<title>marketplace</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" media="screen and (max-width: 1200px)" href="mobile.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
 </head>
 <body>
 	<div id="top-bar">
-		<div id="search-bar-and-name">
-			<h2 id="name-display">CheaplyBeautiful</h2>
+		<div id="name-mobile-menu">
+			<span class="material-icons-round" id='mobile-menu'>menu</span>
+			<h2>CheaplyBeautiful</h2>
 		</div>
-		<div id="search-container"><input type="text" name="search-box" placeholder="search items" id="menu-search"></div>
+		<input type="text" name="search-box" placeholder="search items" id="menu-search">
 		<div id="menu-options">
+			<span class="material-icons-round" id="close-menu">close</span>
 			<span>Home</span>
 			<span>About</span>
 			<span>saved Items</span>
+			<span>Products</span>
+		</div>
+		<div id="acct-nd-cart">
 			<span class="material-icons-outlined">account_circle</span>
 			<span class="material-icons-outlined">shopping_cart</span>
-			<span class="material-icons-outlined">person_add</span>
-			<span>Products</span>
+			<!-- <span class="material-icons-outlined">person_add</span> -->
 		</div>
 	</div>
 	<div id="img-and-text">
 		<div class="img-parents">
-			<img src="discount.svg"/>
+			<img src="images\discount.svg"/>
 			<div class="text">
 				Welcome to cheaply beautiful.com where you can get awesome products at mind blowing prices
 			</div>
 		</div>
 		<div class="img-parents">
-			<img src="delivery.svg"/>
+			<img src="images\delivery.svg"/>
 			<div class="text">
-				On-Time deliveries, efficient customer care, Quality goods and so many more makes us the best in the business
+				On-Time deliveries, Quality goods and so many more makes us the best in the business
 			</div>		
 		</div>
 		<div class="img-parents">
-			<img src="around the world.svg"/>
+			<img src="images\around the world.svg"/>
 			<div class="text">
 				With our branches spread all over the world, online shopping has never been easier
-				<span>So what are you waiting for?</span>
 			</div>
 		</div>
 		<div class="img-parents">
-			<img src="customer care.svg"/>
+			<img src="images\customer care.svg"/>
 			<div class="text">
 				Capable and hardworking workers who are always ready to listen and attend to your complaints.
 			</div>
@@ -59,21 +66,21 @@
 			<a href="#">Shoes<span class="underline"></span></a>
 			<a href="#">Clothing<span class="underline"></span></a>
 		</div>
-		<button id="nav-left"><</button>
-		<button id="nav-right">></button>
 		<div id="slideshow">
-			<img src="..\beautiful-images\laptop 1.jpg"/>
-			<img src="..\beautiful-images\laptop 2.jpg"/>
-			<img src="..\beautiful-images\laptop 3.jpg"/>
-			<img src="..\beautiful-images\books.jpg"/>
-			<img src="..\beautiful-images\book 1.jpg"/>
-			<img src="..\beautiful-images\shoe 1.jpg"/>
-			<img src="..\beautiful-images\shoe 4.jpg"/>
-			<img src="..\beautiful-images\shoe 5.jpg"/>
-			<img src="..\beautiful-images\sony camera.jpg"/>
-			<img src="..\beautiful-images\book 3.jpg"/>
-			<img src="..\beautiful-images\head warmer.jpg"/>
-			<img src="..\beautiful-images\shoe 3.jpg"/>
+			<button id="nav-left"><</button>
+			<button id="nav-right">></button>
+			<img src="images\laptop 1.jpg"/>
+			<img src="images\laptop 2.jpg"/>
+			<img src="images\laptop 3.jpg"/>
+			<img src="images\books.jpg"/>
+			<img src="images\book 1.jpg"/>
+			<img src="images\shoe 1.jpg"/>
+			<img src="images\shoe 4.jpg"/>
+			<img src="images\shoe 5.jpg"/>
+			<img src="images\sony camera.jpg"/>
+			<img src="images\book 3.jpg"/>
+			<img src="images\head warmer.jpg"/>
+			<img src="images\shoe 3.jpg"/>
 		</div>
 	</div>
 	<div id="aliens">
@@ -85,11 +92,11 @@
 				convenient payments no matter where you are from without breaking the bank!
 			</div>
 		</div>
-		<img src="..\beautiful-images\astronauts in space van.webp"/>
+		<img src="images\astronauts in space van.webp"/>
 	</div>
-	<h2 id="ending">Why "smile more" when you can shop like everyday is Black friday<button>Market Place</button></h2>
+	<h2 id="ending">Why "smile more" when you can shop like everyday is Black friday <button>Market Place</button></h2>
 	<hr>
-	<div id = "bottom">
+	<footer id = "bottom">
 		<span>Copyright 2022 CheaplyBeautiful.com</span>
 		<div id = "legal">
 			<p>Legal</p>
@@ -98,11 +105,11 @@
 		</div>
 		<div>
 			<p>Connect with us</p>
-			<span>FaceBook</span>
-			<span>Twitter</span>
-			<span>Instagram</span>
+			<img src="images\facebook.svg">
+			<img src="images\twitter.svg">
+			<img src="images\instagram.svg">
 		</div>
-	</div>
+	</footer>
 	<script type="text/javascript" src="homepage.js"></script>
 </body>
 </html>
