@@ -109,6 +109,7 @@
 @media (max-width: 500px) {
 	#top-bar {
 		padding-right: 5%;
+                height: 40px;
 	}
 
 	#name-mobile-menu {
