@@ -34,9 +34,9 @@ button {
 	width: 8%;
 	display: flex;
 	justify-content: space-evenly;
-	position: absolute;
-	right: 5px;
-	top: 0;
+	position: fixed;
+	right: 15px;
+	top: 2px;
 	z-index: 4;
 }
 
@@ -48,6 +48,7 @@ button {
 }
 
 #name-mobile-menu h2 {
+	font-weight: 500;
 	margin: 0;
 	display: inline;
 	font-style: italic;
@@ -61,6 +62,10 @@ button {
 	border: 1px solid grey;
 	padding: 5px;
 	background: rgb(255, 255, 210);
+}
+
+#content-cover {
+	transition: 0.5s;
 }
 
 #mobile-menu {
@@ -80,6 +85,14 @@ button {
 
 #menu-options span {
 	transition: 0.5s;
+	position: relative;
+}
+
+#menu-options:first-child::after {
+	content: '';
+	width: 100%;
+	color: green;
+	height: 5px;
 }
 
 #img-and-text {
@@ -220,19 +233,29 @@ button {
 	font-family: Poppins, sans-serif;
 	margin-top: 20px;
 	width: 40%;
-	text-align: justify;
 }
 
 #ending {
+	font-family: Poppins, sans-serif;
+	font-weight: 500;
 	width: 70%;
 	margin: auto;
 }
 
+hr {
+	height: 1px;
+	border: 1px solid lightgrey;
+	margin: 15px 5px;
+}
+
 #bottom {
+	max-width: 100%;
+	overflow: hidden;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 0 5%;
 	font-size: 0.7em;
+	text-align: center;
 }
 
 #bottom div {

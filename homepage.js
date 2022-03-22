@@ -2,16 +2,17 @@ let navLeftBtn = document.getElementById("nav-left")
 let navRightBtn = document.getElementById("nav-right")
 let slideShow  = document.getElementById("slideshow")
 let mobile_menu = document.getElementById('mobile-menu')
-let mobile_menu_options = document.getElementById('menu-options')
+let menu_options = document.getElementById('menu-options')
+let menu_container = document.getElementById('content-cover')
 let closeMenuBtn = document.getElementById('close-menu')
 let vel = 0
 
 function moveMenuOnscreen() {
-	mobile_menu_options.style.left = '0';
+	menu_container.style.left = '0';
 }
 
 function returnMenuOffScreen() {
-	mobile_menu_options.style.left = '-100%';
+	menu_container.style.left = '-100%';
 }
 
 window.addEventListener('resize', returnMenuOffScreen)
@@ -47,6 +48,9 @@ function moveRight() { //moves the slideshow right
 }
 
 mobile_menu.addEventListener('click', moveMenuOnscreen)
+menu_container.addEventListener('click', returnMenuOffScreen)
+menu_options.addEventListener('click', function (e) 
+	{e.stopPropagation()})
 navLeftBtn.addEventListener("click", moveLeft)
 navRightBtn.addEventListener("click", moveRight)
 

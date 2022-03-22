@@ -3,11 +3,12 @@
 <head>
 	<title>marketplace</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="homepage.css">
 	<link rel="stylesheet" media="screen and (max-width: 1200px)" href="mobile.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
@@ -19,18 +20,20 @@
 			<h2>CheaplyBeautiful</h2>
 		</div>
 		<input type="text" name="search-box" placeholder="search items" id="menu-search">
-		<div id="menu-options">
-			<span class="material-icons-round" id="close-menu">close</span>
-			<span>Home</span>
-			<span>About</span>
-			<span>saved Items</span>
-			<span>Products</span>
+		<div id="content-cover" onclick="returnMenuOffScreen()">
+			<div id="menu-options">
+				<span class="material-icons-round" id="close-menu">close</span>
+				<span>Home</span>
+				<span>About</span>
+				<span>saved Items</span>
+				<span>Products</span>
+			</div>
 		</div>
-		<div id="acct-nd-cart">
-			<span class="material-icons-outlined">account_circle</span>
-			<span class="material-icons-outlined">shopping_cart</span>
-			<!-- <span class="material-icons-outlined">person_add</span> -->
-		</div>
+	</div>
+	<div id="acct-nd-cart">
+		<span class="material-icons-outlined">account_circle</span>
+		<span class="material-icons-outlined">shopping_cart</span>
+		<!-- <span class="material-icons-outlined">person_add</span> -->
 	</div>
 	<div id="img-and-text">
 		<div class="img-parents">
@@ -97,7 +100,7 @@
 	<h2 id="ending">Why "smile more" when you can shop like everyday is Black friday <button>Market Place</button></h2>
 	<hr>
 	<footer id = "bottom">
-		<span>Copyright 2022 CheaplyBeautiful.com</span>
+		<div>Copyright 2022 CheaplyBeautiful.com</div>
 		<div id = "legal">
 			<p>Legal</p>
 			<span>Terms and Condition</span>
