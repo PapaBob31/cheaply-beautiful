@@ -1,0 +1,6 @@
+programming tips and help
+
+<< JAVASCRIPT >>
+<Uncaught Syntax Error: Unexpected Identifier> means you are missing a curly bracket, a bracket or a comma 
+I think Javascript can't read stylesheets. so if you try to get an element's style from astylesheet through js, it won't work. this is only an assumption though
+Nodelists are different from arrays

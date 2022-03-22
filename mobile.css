@@ -12,6 +12,8 @@
 	}
 
 	#name-mobile-menu {
+		width: 35%;
+		display: flex;
 		justify-content: space-between;
 	}
 
@@ -29,6 +31,7 @@
 	}
 
 	#menu-options {
+		padding-top: 15px;
 		flex-direction: column;
 		justify-content: unset;
 		position: absolute;
@@ -39,26 +42,20 @@
 		width: 70%;
 	}
 
-	#menu-options span {
+	#menu-options a {
 		text-align: center;
 		width: 90%;
 		padding: 3px;
 		margin: 10px auto 0;
 		border-radius: 10px;
-		background: inherit;
 	}
 
-	#menu-options span:hover {
-		background: rgba(255, 229, 158, 0.3);
+	#home {
+		background: rgba(245, 219, 120);
 	}
 
 	#close-menu {
 		display: unset;
-		position: absolute;
-		top: 2px !important; 
-		right: 5px !important; 
-		width: initial !important; 
-		border-radius: 50% !important; 
 	}
 
 	.img-parents {
@@ -85,8 +82,16 @@
 		padding-right: 10%;
 	}
 
+	#acct-nd-cart {
+		right: 10px;
+	}
+
 	#name-mobile-menu {
 		width: 50%;
+	}
+
+	#img-and-text {
+		padding: 10px 4% 0 4%;
 	}
 	
 	#slideshow-container img {
@@ -118,12 +123,17 @@
 @media (max-width: 500px) {
 	#top-bar {
 		padding-right: 5%;
+		padding-bottom: 5px;
 	}
 
 	#menu-search {
-		margin-top: 15px;
+		margin-top: 5px;
 		width: 100%;
 		order: 1;
+	}
+
+	.img-parents {
+		width: 80%;
 	}
 
 	#aliens img {
@@ -147,6 +157,10 @@
 		padding: 10px 5px 0 5px;
 	}
 
+	#acct-nd-cart {
+		right: 15px;
+	}
+
 	.img-parents {
 		width: 90%;
 	}
@@ -163,9 +177,13 @@
 	}
 }
 
-@media (max-width: 270px) {
+@media (max-width: 280px) {
 	.img-parents {
 		width: 80%;
+	}
+
+	#acct-nd-cart {
+		right: 25px;
 	}
 
 	#name-mobile-menu h2 {
@@ -183,7 +201,9 @@
 
 	#bottom {
 		flex-direction: column;
-		max-width: unset;
+		max-width: 100%;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 }

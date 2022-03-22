@@ -20,20 +20,20 @@
 			<h2>CheaplyBeautiful</h2>
 		</div>
 		<input type="text" name="search-box" placeholder="search items" id="menu-search">
-		<div id="content-cover" onclick="returnMenuOffScreen()">
+		<div id="content-cover">
 			<div id="menu-options">
 				<span class="material-icons-round" id="close-menu">close</span>
-				<span>Home</span>
-				<span>About</span>
-				<span>saved Items</span>
-				<span>Products</span>
+				<a href="#" id="home">Home</a>
+				<a href="#">About</a>
+				<a href="#">saved Items</a>
+				<a href="#">Products</a>
 			</div>
 		</div>
-	</div>
-	<div id="acct-nd-cart">
-		<span class="material-icons-outlined">account_circle</span>
-		<span class="material-icons-outlined">shopping_cart</span>
-		<!-- <span class="material-icons-outlined">person_add</span> -->
+		<div id="acct-nd-cart">
+			<span class="material-icons-outlined">account_circle</span>
+			<span class="material-icons-outlined">shopping_cart</span>
+			<!-- <span class="material-icons-outlined">person_add</span> -->
+		</div>
 	</div>
 	<div id="img-and-text">
 		<div class="img-parents">
@@ -71,7 +71,7 @@
 		</div>
 		<div id="slideshow">
 			<button id="nav-left"><</button>
-			<button id="nav-right">></button>
+			<button id="nav-right" style="display: none;">></button>
 			<img src="images\laptop 1.jpg"/>
 			<img src="images\laptop 2.jpg"/>
 			<img src="images\laptop 3.jpg"/>

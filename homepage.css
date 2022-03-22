@@ -6,6 +6,8 @@ body {
 	font-family: Segoe UI, sans-serif;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 input {
@@ -23,27 +25,26 @@ button {
 	background: rgb(255, 229, 158);
 	position: sticky;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	top: 0;
-	padding: 0 5% 5px;
+	padding: 0 5%;
 	z-index: 3;
 }
 
 #acct-nd-cart {
+	display: none;
 	width: 8%;
 	display: flex;
 	justify-content: space-evenly;
-	position: fixed;
-	right: 15px;
-	top: 2px;
+	position: absolute;
+	right: 3px;
+	top: 1px;
 	z-index: 4;
 }
 
 #name-mobile-menu {
-	width: 35%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
@@ -65,6 +66,8 @@ button {
 }
 
 #content-cover {
+	width: 35%;
+	z-index: 9;
 	transition: 0.5s;
 }
 
@@ -73,26 +76,27 @@ button {
 }
 
 #close-menu {
+	z-index: 8;
 	display: none;
+	position: absolute;
+	top: 0;
+	right: 3px;
+	padding: 3px;
+	border-radius: 50%;
 }
 
 #menu-options {
+	z-index: 7;
 	transition: .5s;
-	width: 40%;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-#menu-options span {
+#menu-options a {
 	transition: 0.5s;
 	position: relative;
-}
-
-#menu-options:first-child::after {
-	content: '';
-	width: 100%;
-	color: green;
-	height: 5px;
+	text-decoration: none;
+	color: black;
 }
 
 #img-and-text {
