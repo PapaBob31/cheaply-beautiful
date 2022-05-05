@@ -67,8 +67,7 @@ button {
 
 #content-cover {
 	width: 35%;
-	z-index: 9;
-	transition: 0.5s;
+	z-index: 7;
 }
 
 #mobile-menu {
@@ -86,7 +85,7 @@ button {
 }
 
 #menu-options {
-	z-index: 7;
+	z-index: 9;
 	transition: .5s;
 	display: flex;
 	justify-content: space-evenly;

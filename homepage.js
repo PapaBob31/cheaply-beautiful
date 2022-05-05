@@ -1,23 +1,28 @@
+let body = document.querySelector("body")
 let navLeftBtn = document.getElementById("nav-left")
 let navRightBtn = document.getElementById("nav-right")
 let slideShow  = document.getElementById("slideshow")
 let mobile_menu = document.getElementById('mobile-menu')
 let menu_options = document.getElementById('menu-options')
-let menu_container = document.getElementById('content-cover')
+let contentCover = document.getElementById('content-cover')
 let closeMenuBtn = document.getElementById('close-menu')
 let vel = 0
 
 function moveMenuOnscreen() {
-	menu_container.style.left = '0';
+	contentCover.style.left = '0';
+	menu_options.style.left = '0';
+	body.style.overflow = "hidden"
 }
 
 function returnMenuOffScreen() {
-	menu_container.style.left = '-100%';
+	contentCover.style.left = '-100%';
+	menu_options.style.left = '-70%';
+	body.removeAttribute("style")
 }
 
 closeMenuBtn.addEventListener('click', returnMenuOffScreen)
 mobile_menu.addEventListener('click', moveMenuOnscreen)
-menu_container.addEventListener('click', returnMenuOffScreen)
+contentCover.addEventListener('click', returnMenuOffScreen)
 menu_options.addEventListener('click', function (e) {e.stopPropagation()})
 
 let lines = document.querySelectorAll(".underline") //lines under the links

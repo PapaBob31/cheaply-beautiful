@@ -36,10 +36,10 @@
 		justify-content: unset;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -60%;
 		background: rgb(255, 229, 158);
 		height: 100vh;
-		width: 70%;
+		width: 60%;
 	}
 
 	#menu-options a {
