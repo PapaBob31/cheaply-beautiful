@@ -1,3 +1,4 @@
+let windowWidth = window.innerWidth
 let body = document.querySelector("body")
 let navLeftBtn = document.getElementById("nav-left")
 let navRightBtn = document.getElementById("nav-right")
@@ -113,7 +114,13 @@ function moveLeft() { //moves the slideshow left
 		vel -= 100
 		images = slideShow.querySelectorAll("img")
 		for (let i=0; i<images.length; i++) {
-			images[i].style.transform = `translateX(${vel}%)`
+			images[i].style.cssText = `
+			-Webkit-transform: translateX(${vel}%);
+			-Moz-transform: translateX(${vel}%);
+			-o-transform: translateX(${vel}%);
+			-ms-transform: translateX(${vel}%);
+			transform: translateX(${vel}%);
+			`
 		}
 	}
 	if (vel == limit) {navLeftBtn.style.display = 'none'}  
@@ -128,7 +135,13 @@ function moveRight() { //moves the slideshow right
 		vel += 100
 		images = slideShow.querySelectorAll("img")
 		for (let i=0; i<images.length; i++) {
-			images[i].style.transform = `translateX(${vel}%)`
+			images[i].style.cssText = `
+			-Webkit-transform: translateX(${vel}%);
+			-Moz-transform: translateX(${vel}%);
+			-o-transform: translateX(${vel}%);
+			-ms-transform: translateX(${vel}%);
+			transform: translateX(${vel}%);
+			`
 		}
 	}if (vel == 0) {navRightBtn.style.display = 'none'}
 }
@@ -137,19 +150,29 @@ navLeftBtn.addEventListener("click", moveLeft)
 navRightBtn.addEventListener("click", moveRight)
 
 function resetSlideshow() {
-	vel = 0
-	mobile_index = 0
-	index = 0
-	lines[0].style.width = '99.99%'
-	currentlyVisibleLines = [lines[0]]
-	images = slideShow.querySelectorAll("img")
-	for (let i=0; i<images.length; i++) {
-		images[i].style.transform = `translateX(${vel}%)`
-	}
-	for (let i=0; i<lines.length; i++) {
-		if (i != 0) {
-			lines[i].style.width = '0'
+	// Check if window width really changed bcos of some mobile browser's strange resize behaviour
+	if (window.innerWidth != windowWidth) {
+		vel = 0
+		mobile_index = 0
+		index = 0
+		lines[0].style.width = '99.99%'
+		currentlyVisibleLines = [lines[0]]
+		images = slideShow.querySelectorAll("img")
+		for (let i=0; i<images.length; i++) {
+			images[i].style.cssText = `
+			-Webkit-transform: translateX(${vel}%);
+			-Moz-transform: translateX(${vel}%);
+			-o-transform: translateX(${vel}%);
+			-ms-transform: translateX(${vel}%);
+			transform: translateX(${vel}%);
+			`
 		}
+		for (let i=0; i<lines.length; i++) {
+			if (i != 0) {
+				lines[i].style.width = '0'
+			}
+		}
+		windowWidth = window.innerWidth
 	}
 }
 
